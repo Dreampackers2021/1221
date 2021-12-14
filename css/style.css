@@ -78,6 +78,7 @@ section {
 #container {
   width: 95%;
   margin: 0 auto;
+  position: relative;
 }
 
 /*ヘッダー
@@ -120,13 +121,12 @@ header a {
   flex-basis: 20%;
 }
 
-
 /*開閉メニュー
 ---------------------------------------------------------------------------*/
 /*スマホ用メニューブロック全体*/
 #menubar {
   position: absolute;
-  top: 84px;
+  top: 114px;
   left: 100px;
   width: 150px;
 }
@@ -176,7 +176,6 @@ header a {
   animation-fill-mode: both;
 }
 
-
 #contents h2 {
   clear: both;
   margin-bottom: 10px;
@@ -187,7 +186,6 @@ header a {
   font-weight: bold;
   font-family: Mr Eaves Mod OT;
 }
-
 
 /*段落タグ*/
 #contents p {
@@ -237,7 +235,6 @@ header a {
   text-decoration: none;
 }
 
-
 /*トップページ内「更新情報・お知らせ」ブロック
 ---------------------------------------------------------------------------*/
 /*見出しを含まないお知らせブロック*/
@@ -257,7 +254,6 @@ header a {
 #new dd {
   padding-left: 9em;
 }
-
 
 /*inputボタン
 ---------------------------------------------------------------------------*/
@@ -335,7 +331,7 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
 }
 
 .brand-content {
-  padding-bottom: 10%;
+  padding-bottom: 7%;
 }
 
 .brand-image {
@@ -375,10 +371,11 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
 
 .company-info-en {
   flex-basis: 330px;
+  font-family: Mr Eaves Mod OT;
 }
 
 .company-info-en .company-name {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .company-info-ja {
@@ -400,7 +397,6 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
   width: 20%;
 }
 
-
 /*その他
 ---------------------------------------------------------------------------*/
 .clearfix::after {
@@ -408,76 +404,6 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
   display: block;
   clear: both;
 }
-
-.mb15, .mb1em {
-  margin-bottom: 15px !important;
-}
-
-.mb20 {
-  margin-bottom: 20px !important;
-}
-
-.mb30 {
-  margin-bottom: 30px !important;
-}
-
-.mb50 {
-  margin-bottom: 50px !important;
-}
-
-.plr3p {
-  padding-left: 3% !important;
-  padding-right: 3% !important;
-}
-
-.clear {
-  clear: both;
-}
-
-.color1, .color1 a {
-  color: #8e1717 !important;
-}
-
-.wl {
-  width: 96%;
-}
-
-.ws {
-  width: 50%;
-}
-
-.w48p {
-  width: 48%;
-}
-
-.c {
-  text-align: center !important;
-}
-
-.r {
-  text-align: right !important;
-}
-
-.l {
-  text-align: left !important;
-}
-
-.fl {
-  float: left;
-}
-
-.fr {
-  float: right;
-}
-
-.sh {
-  display: none;
-}
-
-.ofh {
-  overflow: hidden;
-}
-
 
 /*画面幅800px以下の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -499,14 +425,12 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
     display: none !important;
   }
 
-
   /*その他
 ---------------------------------------------------------------------------*/
   body.s-n .sub, body.s-n #footermenu {
     display: none;
   }
 }
-
 
 /*画面幅480px以下の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -530,7 +454,6 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
     padding-bottom: 10px;
   }
 
-
   .icon-top {
     display: grid;
     grid-template-columns: 1fr 35px 30px;
@@ -541,6 +464,17 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
 
   .icon-top div {
     padding-bottom: 0;
+  }
+
+  #menubar {
+    top: 53px;
+    left: 0;
+    z-index: 2;
+  }
+
+  #menubar ul {
+    transform: unset;
+    width: 45vh;
   }
 
   /*h2タグ*/
@@ -581,33 +515,16 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
     padding: 0;
   }
 
-  .brand-social{
+  .brand-social {
     padding-top: 10px;
   }
 
-  /*その他
----------------------------------------------------------------------------*/
-  .ws, .wl {
-    width: 94%;
+  .company-info-ja {
+    font-size: 12px;
+    padding-top: 20px;
   }
 
-  .w48p {
-    width: 100%;
-  }
-
-  .fl {
-    float: none;
-  }
-
-  .fr {
-    float: none;
-  }
-
-  .sh {
-    display: block;
-  }
-
-  .pc {
-    display: none;
+  .company-adress{
+    font-size: 14px;
   }
 }
