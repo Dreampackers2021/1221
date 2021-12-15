@@ -175,6 +175,10 @@ header a {
   animation-fill-mode: both;
 }
 
+#menubar ul li a:active ul{
+  animation-name: opa1;
+}
+
 #contents h2 {
   clear: both;
   margin-bottom: 10px;
@@ -378,7 +382,7 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
 }
 
 .company-info-ja {
-  font-size: 14px;
+  font-size: 1em;
   padding-top: 10px;
 }
 
@@ -404,6 +408,23 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
   clear: both;
 }
 
+.inden::before {
+  content: "\A";
+  white-space: pre;
+}
+
+@media screen and (max-width:480px) {
+  .iden-sm-1::before {
+    content: "\A";
+    white-space: unset;
+  }
+
+  .inden-sm-2::before {
+    content: "\A";
+    white-space: pre;
+  }
+}
+
 /*画面幅800px以下の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width:800px) {
@@ -412,7 +433,6 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
 ---------------------------------------------------------------------------*/
   html, body {
     font-size: 2vw;
-    /*文字サイズ*/
   }
 
   /*ヘッダー
@@ -429,6 +449,13 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
   body.s-n .sub, body.s-n #footermenu {
     display: none;
   }
+
+  .company-info-en,
+  .text-sub a,
+  #contents h2 {
+    font-family: "小塚ゴシック", "Helvetica", "sans-serif" !important;
+  }
+
 }
 
 /*画面幅480px以下の設定
@@ -479,6 +506,9 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
   /*h2タグ*/
   #contents h2 {
     margin-bottom: 0;
+    letter-spacing: unset;
+    font-size: 1.2em;
+
   }
 
   /*他、微調整*/
@@ -510,6 +540,11 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
     flex-basis: unset;
   }
 
+  .company-info-en .company-name {
+    font-size: 1.2em;
+    padding-bottom: 10px !important;
+  }
+
   #contents p {
     padding: 0;
   }
@@ -523,7 +558,12 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
     padding-top: 20px;
   }
 
-  .company-adress{
-    font-size: 14px;
+  .company-adress {
+    font-size: 12px;
+  }
+
+  .brand-link {
+    letter-spacing: unset;
   }
 }
+

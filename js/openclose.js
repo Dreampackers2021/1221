@@ -1,6 +1,6 @@
 /*
- * ƒuƒƒbƒNŠJ•Âˆ—
- * 2015/12/21 ƒ{ƒ^ƒ“‰æ‘œ‚Ì”ñ•\Ž¦ˆ—‚ðs‚í‚È‚¢
+ * ï¿½uï¿½ï¿½ï¿½bï¿½Nï¿½Jï¿½Âï¿½ï¿½ï¿½
+ * 2015/12/21 ï¿½{ï¿½^ï¿½ï¿½ï¿½æ‘œï¿½Ì”ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½È‚ï¿½
  */
 /*
  * Return the classList property of e, if it has one.
@@ -98,14 +98,15 @@ function open_close(hdr, item)
 	classList(e).remove('open');
 	classList(e).add('close');
 	if (classList(e).contains('open')) {
-//		e.style.display = '';
 		e2.style.display = '';
 	}
 	if (classList(e).contains('close')) {
-//		e.style.display = '';
 		e2.style.display = 'none';
 	}
 
+    $('#menubar > ul > li').on('click', function(){
+        $("#menubar").hide();
+    });
 }
 function OCisSmartPhone()
 {
