@@ -115,10 +115,6 @@
 	font-weight: bold;
 }
 
-.text-sub:hover{
-	width: 165px;
-}
-
 .text-sub a {
 	text-decoration: unset;
 	font-size: 22px;
@@ -126,6 +122,12 @@
 	color: #000;
 	padding-left: 5px;
   font-family: Mr Eaves Mod OT;
+}
+
+@media screen and (min-width:481px) {
+.text-sub:hover{
+	width: unset;
+}
 }
 
 .text-sub:hover a{
