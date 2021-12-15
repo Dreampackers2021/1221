@@ -66,7 +66,6 @@ a:hover {
 ---------------------------------------------------------------------------*/
 .inner {
   max-width: 1800px;
-  margin: 0 auto;
 }
 
 /*section
@@ -456,7 +455,7 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
 
   .icon-top {
     display: grid;
-    grid-template-columns: 1fr 35px 30px;
+    grid-template-columns: 1fr 30px;
     justify-content: center;
     align-items: center;
     position: unset;
