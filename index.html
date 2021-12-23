@@ -172,16 +172,26 @@
             news += '';
           }
           var line = allRows[singleRow].split(',');
-          if (line[2] !== "") {
-            news += '<a class="news-link" href=' + line[2] + ">";
+          if (line.length === 3　&& line[2] !== "") {
+            news += "<a class='news-link' href=" + line[2] + ">";
           }
           if (line[0] !== "") {
             news += "<dt>" + line[0] + "</dt>";
           }
           if (line[1] !== "") {
-            news += "<dd>" + line[1] + "</dd>";
+            var newLine = line[1].split('|');
+            if (newLine.length ===1){
+              news += "<dd>" + line[1] + "</dd>";
+            }else{
+              //セル内で改行する
+              news += "<dd>";
+              for (var i = 0; i< newLine.length; i++){
+                news += newLine[i] + "<br>";
+              }
+              news += "</dd>";
+            }
           }
-          if (singleRow !== 0) {
+          if (line.length === 3　&& line[2] !== " " && singleRow !== 0) {
             news += "</a>";
           }
         }
