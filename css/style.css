@@ -517,11 +517,15 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
   }
 
   #new dt {
-    width: 6em;
+    letter-spacing: unset;
+    float: unset;
+    width: unset;
   }
 
   #new dd {
-    padding-left: 7em;
+    padding-left: 0.5em;
+    border-bottom: 1px dotted;
+    margin-bottom: 1em;
   }
 
   .brand-logo {

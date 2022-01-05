@@ -172,11 +172,11 @@
             news += '';
           }
           var line = allRows[singleRow].split(',');
-          if (line.length === 3　&& line[2] !== "") {
-            news += "<a class='news-link' href=" + line[2] + ">";
-          }
           if (line[0] !== "") {
             news += "<dt>" + line[0] + "</dt>";
+          }
+          if (line.length === 3　&& line[2] !== "") {
+            news += "<a class='news-link' href=" + line[2] + ">";
           }
           if (line[1] !== "") {
             var newLine = line[1].split('|');
